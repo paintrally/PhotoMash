@@ -1,29 +1,36 @@
 # PhotoMash
 
-Welcome to **PhotoMash**, a web-based image editing program! This is my very first Macando (and Hack Club) project.
-
-I built this application by splicing together different pieces of code I found across the web, tweaking them, and combining them to create something unique. 
+A simple, web-based image editor built by stitching together awesome open-source snippets and web tutorials. This is my very first Macando / Hack Club project! I wanted to see if I could take different pieces of code from around the internet, mix them together, and build a unique tool that actually works.
 
 ---
 
 ## Features
 
-* Sliders for Brightness, Contrast, and Saturation.
-* Rotation, scaling, and fliping your photos horizontally or vertically.
-* Cropping on the canvas and crop down to exactly what you need.
-* All in the browser
+* **Quick Adjustments:** Sliders to tweak Brightness, Contrast, and Saturation on the fly.
+* **Transformations:** Tools to rotate up to 360°, scale, or flip your image vertically and horizontally.
+* **Canvas Cropping:** Click "Start Crop" to free-hand draw a box over your photo, then hit "Apply Crop" to chop out the rest.
+* **100% Local:** Runs entirely inside your browser. No servers, no accounts, and no tracking.
+* **Weird Background:** Uses a layered CSS gradient blend-mode trick to create a vibrant, retro backdrop.
+
+---
+
+## How to Run It
+
+1. Download the files or clone the repo.
+2. Double-click `index.html` to open it in any web browser.
+3. Click **"Go to PhotoMash"**, drop an image in, and start messing around with it!
 
 ---
 
 ## Thanks and Attributions
 
-This project wouldn't be possible without the incredible tutorials, snippets, and documentation provided by the community. Huge thanks to:
+This project is a Frankenstein monster of great code bits found across the web. Big thanks to these creators:
 
-* [Advanced Image Editor with Vanilla JavaScript (GitHub)](https://github.com/codehuntersharath/Advanced-Image-Editor-with-Vanilla-JavaScript/tree/main) & [Dev.to Tutorial](https://dev.to/codehuntersharath/build-an-advanced-image-editor-with-html-css-javascript-filters-cropping-and-more-3192) by codehuntersharath — *For the core logic behind the image filters and manipulation setup.*
-* [Interactive Gradient CodePen](https://codepen.io/MarkBoots/pen/LYjvEJj) by MarkBoots — *For the math and styling behind the beautiful background gradients.*
-* [W3Schools CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php) — *For help setting up the clean, monospace typography.*
-* [W3Schools HTML Button Links](https://www.w3schools.com/Html/tryit.asp?filename=tryhtml_links_button_element) — *For the page navigation implementation between index and editor.*
-* [W3Schools HTML Mark Tag](https://www.w3schools.com/tags/tag_mark.asp) — *For helping the control labels pop against the dark background elements.*
+* [Advanced Image Editor with Vanilla JavaScript (GitHub)](https://github.com/codehuntersharath/Advanced-Image-Editor-with-Vanilla-JavaScript/tree/main) & [Dev.to Tutorial](https://dev.to/codehuntersharath/build-an-advanced-image-editor-with-html-css-javascript-filters-cropping-and-more-3192) by codehuntersharath — For the core logic behind the canvas filters and cropping states.
+* [Interactive Gradient CodePen](https://codepen.io/MarkBoots/pen/LYjvEJj) by MarkBoots — For the math and styling behind the overlay/difference background gradients.
+* [W3Schools CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php) — For the clean Courier monospace font stack.
+* [W3Schools HTML Button Links](https://www.w3schools.com/Html/tryit.asp?filename=tryhtml_links_button_element) — For the button setup to jump between the home page and the editor.
+* [W3Schools HTML Mark Tag](https://www.w3schools.com/tags/tag_mark.asp) — For the highlighter effect behind the labels so they stay readable against the dark background.
 
 ---
-Built with 💻 and 💖!
+Built for Hack Club with 💻, 🍕, and a lot of trial and error!

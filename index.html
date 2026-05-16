@@ -1,0 +1,62 @@
+<html>
+<style>
+body {
+  font-family: 'Courier New', monospace;
+}
+.header {
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  animation: animate 2s linear forwards;
+}
+h1.header {
+  color: rgb(0, 0, 0);
+}
+@keyframes animate {
+  0% { 
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.button {
+    font-family: 'Courier New', monospace;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #000000;
+}
+
+.button:hover {background-color: #000000}
+
+.button:active {
+  background-color: #000000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body{
+  height:100vh;
+  margin: 0;
+  --x: calc(var(--posX, 0) * 1px);
+  --y: calc(var(--posY, 0) * 1px);
+  background-image: 
+    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+  background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+}
+</style>
+<title>PhotoMash</title>
+<center><h1 class="header">PhotoMash</h1></center>
+<center><h2>PhotoMash is a web based image editing program!</h2></center>
+<center><button class="button" onclick="window.location.href='editor.html'">Go to PhotoMash</button></center>
